@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/metro")
+
+    <style>
+        .dropbutton {
+            background-color: #F8F8F8;
+            color: #212121;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .dropbutton:hover, .dropbutton:focus {
+            background-color: inherit;
+        }
+        .dropdownmenu {
+            position: relative;            
+            display: inline-block;
+            outline: none;
+        }
+        .dropdownmenu-content {
+            display: none;
+            position: absolute;
+            margin-left: -150px;
+            background-color: #f9f9f9;
+            overflow: auto;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+            padding: 10px 10px 10px 10px;
+        }
+        .show {
+            display: block;
+        }
+        .primary {            
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-justify-between app-bar flex-align-end">
+            <div class="app-bar-container float-left">
+                <a href="#" class="app-bar-item dropdown-toggle">Muebles</a>
+                <ul class="d-menu put-left" data-role="dropdown">
+                    <li><a href="#">Mesas</a></li>
+                    <li><a href="#">Sillas</a></li>
+                    <li><a href="#">Camas</a></li>
+                    <li><a href="#">Comodas</a></li>
+                </ul>
+                <a href="#" class="app-bar-item">Contacto</a>
+                <a href="#" class="app-bar-item">Misión</a>
+                <a href="#" class="app-bar-item">Visión</a>
+            </div>
+            <div class="app-bar-container float-right ">
+                <div class="app-bar-item">
+                    <div class="dropdownmenu">
+                        <button onclick="btnToggle()" class="dropbutton">
+                            Login
+                        </button>
+                        <div id="Dropdown" class="dropdownmenu-content">
+                            <form>
+                                <div class="form-group">
+                                    <label>Usuario</label>
+                                    <input class="input-small" type="text" data-role="input"
+                                           data-prepend="<span class='mif-user'></span>" data-size="180px">
+                                    <label>Contraseña</label>
+                                    <input class="input-small" type="password" data-role="input"
+                                           data-prepend="<span class='mif-key'></span>" data-size="180px">
+                                    <input type="checkbox" data-role="checkbox" data-caption="Recordarme">
+                                </div>                             
+                                <div class="form-group">
+                                    <button class="button primary outline">Ingreso</button>
+                                    <button class="button primary outline">Registro</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // JavaScript code to avoid dropdown
+        // menu close
+        // Clicking dropdown button will toggle display
+        function btnToggle() {
+            document.getElementById("Dropdown").classList.toggle("show");
+        }
+        // Prevents menu from closing when clicked inside
+        document.getElementById("Dropdown").addEventListener('click', function (event) {         
+            event.stopPropagation();
+        });
+        // Closes the menu in the event of outside click
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbutton')) {
+                var dropdowns =
+                    document.getElementsByClassName("dropdownmenu-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    @RenderBody()
+</body>
+
+
+</html>

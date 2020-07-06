@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "PayDocumentUser";
+}
+
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/metro")
+
+<style>
+    fieldset {
+        border: 1px solid #0366d6;
+        text-align: start;
+        text-space-collapse: preserve;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 50px;
+    }
+    legend {
+        font-size: 10px;
+    }
+    label {
+        margin-left: 5px;       
+    }
+    input {
+        margin-left: 50px;          
+        float: none;        
+    }
+
+</style>
+
+<div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 500px">
+    <fieldset class="container">
+        <legend>Tipo de Documento</legend>
+        <form>
+            <div class="form-group">
+                <input type="radio" data-role="radio" data-caption="Boleta">
+                <input type="radio" data-role="radio" data-caption="Factura">
+            </div>
+        </form>
+    </fieldset>
+    <br />
+    <fieldset class="container">
+        <legend>Medio de Pago</legend>
+        <form>
+            <div class="form-group">
+                <input type="radio" data-role="radio" data-caption="Usuario"><br />
+                <input type="radio" data-role="radio" data-caption="Otro">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+                <label>Nombre:</label>
+                <input type="text" placeholder="Nombre..." />
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+                <label>RUT:</label>
+                <input type="text" placeholder="Rut..." />
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+                <label>Teléfono</label>
+                <input type="text" placeholder="Teléfono..." />
+            </div>
+        </form>
+    </fieldset>
+    <br />
+    <fieldset class="container">
+        <legend>Datos del documento</legend>
+        <form>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>Nombre: </label>
+                <label>Carlos Marchant</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>RUT: </label>
+                <label>1326548989</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>Direccion:  </label>
+                <label>Calle nueva 1234</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>Región:  </label>
+                <label>Bio Bio</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>Ciudad:  </label>
+                <label>Concepción</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>Email:  </label>
+                <label>carlosdsad@yahoo.es</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <label>Telefono:  </label>
+                <label>3124324</label>
+            </div>
+            <div class="form-group">
+                <a href="#">Modificar Datos</a>
+            </div>
+        </form>
+    </fieldset>
+    <br />
+    <fieldset class="container">
+        <legend>Productos</legend>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Productos</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mesa1</td>
+                    <td>$50.000</td>
+                    <td>$50.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mesa2</td>
+                    <td>$60.000</td>
+                    <td>$60.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <br />
+    <fieldset class ="container">
+        <legend>Productos</legend>
+        <select data-role="select" style="max-width: 200px">
+            <option value="visa">visa</option>
+            <option value="efectivo">efectivo</option>
+        </select>
+        </fieldset>
+        <br />
+        <button class="button primary outline">Pagar</button>
+
+</div>
+   
+
