@@ -13,5 +13,11 @@ namespace MetroUIPrueba2.Controllers
         {
             return View();
         }
+
+        public ActionResult Crear()
+        {
+            return View();
+        }
+
     }
 }
