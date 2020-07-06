@@ -40,5 +40,10 @@ namespace MetroUIPrueba2.Controllers
         {
             return View();
         }
+
+        public ActionResult product_selected()
+        {
+            return View();
+        }
     }
 }
