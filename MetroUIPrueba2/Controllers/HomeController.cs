@@ -29,7 +29,15 @@ namespace MetroUIPrueba2.Controllers
 
         public ActionResult PayDocumentUser()
         {      
+            return View();
+        }
 
+        public ActionResult PayDocumentClient()
+        {
+            return View();
+        }
+        public ActionResult user_client_choose()
+        {
             return View();
         }
     }

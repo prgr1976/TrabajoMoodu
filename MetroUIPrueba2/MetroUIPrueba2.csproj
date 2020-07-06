@@ -188,6 +188,8 @@
     <Content Include="Scripts\metro.min.js.map" />
     <Content Include="Views\Home\PayDocumentUser.cshtml" />
     <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Home\PayDocumentClient.cshtml" />
+    <Content Include="Views\Home\user_client_choose.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "user_client_choose";
+}
+
+<h2>user_client_choose</h2>
+
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        align-items: center;
+    }
+    .button_150{
+        width: 150px;
+    }
+</style>
+
+<div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 300px">    
+    <form>
+        <div class="form-group">
+            <label>Usuario</label>
+            <input class="input-small" type="text" data-role="input"
+                   data-prepend="<span class='mif-user'></span>" data-size="180px">
+            <label>Contraseña</label>
+            <input class="input-small" type="password" data-role="input"
+                   data-prepend="<span class='mif-key'></span>" data-size="180px">
+            <input type="checkbox" data-role="checkbox" data-caption="Recordarme">
+        </div>
+        <div id="content-container" class="form-group">
+            <button class="button primary outline button_150">Iniciar Sesión</button>
+        </div>
+        <div id="content-container" class="form-group">
+            <button class="button primary outline button_150">Registrarse</button><br />
+            <a href="#">Recuperar Contraseña</a>
+        </div>
+        <div id="content-container" class="form-group">
+            <label>o</label>
+        </div>
+        <div id="content-container" class="form-group">
+            <button class="button primary outline button_150">Seguir como invitado</button><br />
+        </div>
+
+    </form>
+</div>
