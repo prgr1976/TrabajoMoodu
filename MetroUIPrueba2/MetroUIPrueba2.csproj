@@ -186,6 +186,7 @@
     <Content Include="Views\Producto\Crear.cshtml" />
     <Content Include="Views\Home\product_selected.cshtml" />
     <Content Include="Views\Home\Mesas.cshtml" />
+    <Content Include="Views\Home\Closets.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
