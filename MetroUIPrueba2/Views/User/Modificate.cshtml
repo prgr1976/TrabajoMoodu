@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Modificate";
+}
+
+<    <style>
+        fieldset {
+            border: 1px solid #0366d6;
+            text-align: start;
+            text-space-collapse: preserve;
+            padding-bottom: 20px;
+            padding-top: 15px;
+            margin-top: 50px;
+        }
+
+        legend {
+            font-size: 10px;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+    </style>
+
+    <div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 600px">
+        <label>Registro de Usuario</label>       
+        <fieldset class="container">
+            <legend>Datos de Cliente</legend>
+            <form>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Nombres:</label>
+                    <input type="text" value="Carlos Andrés"placeholder="Nombres..." style="width: 320px" />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Apellidos:</label>
+                    <input type="text" value="Marchant Sánchez" placeholder="Apellidos..." style="width: 320px; " />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Dirección</label>
+                    <input type="text" value="Calle 1234" placeholder="Dirección..." style="width: 320px" />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Email:</label>
+                    <input type="email" value="carlos.marchant@viginiogomez.cl" placeholder="Email..." style="width: 320px" />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Teléfono:</label>
+                    <input type="text" value="9-87458676" placeholder="Teléfono..." style="width: 320px; " />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Ciudad</label>
+                    <input type="text" value="Concepción" placeholder="Ciudad..." style="width: 320px" />
+                </div>
+            </form>
+        </fieldset>
+        <br />
+        <fieldset class="container">
+            <legend>Datos de Usuario del Sistema</legend>
+            <form>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Nick</label>
+                    <input type="text" value="car1986" placeholder="Nombre de Usuario:..." style="width: 320px" />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Contraseña:</label>
+                    <input type="password" value="1234" placeholder="Contraseña..." style="width: 320px; " />
+                </div>
+                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                    <label>Repita la Contraseña</label>
+                    <input type="password" value="1234" placeholder="Contraseña..." style="width: 320px" />
+                </div>
+            </form>
+        </fieldset>
+        <br />
+        <div class="form-group">
+            <button class="button default outline">Ingresar</button>
+            <input type="button" class="button default outline" value="Atras">
+        </div>
+    </div>
+
