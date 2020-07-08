@@ -208,6 +208,11 @@
     <Content Include="Views\Producto\Ver.cshtml" />
     <Content Include="Views\Producto\Editar.cshtml" />
     <Content Include="Views\Producto\Actualizar.cshtml" />
+    <Content Include="Views\Insumo\Nuevo.cshtml" />
+    <Content Include="Views\Insumo\Index.cshtml" />
+    <Content Include="Views\Insumo\Ver.cshtml" />
+    <Content Include="Views\Insumo\Editar.cshtml" />
+    <Content Include="Views\Insumo\Actualizar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
