@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InsumoController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -191,6 +192,8 @@
     <Content Include="Views\User\ViewUser.cshtml" />
     <Content Include="Views\User\Modificate.cshtml" />
     <Content Include="Views\Producto\Inventario.cshtml" />
+    <Content Include="Views\Insumo\Crear.cshtml" />
+    <Content Include="Views\Insumo\Inventario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
