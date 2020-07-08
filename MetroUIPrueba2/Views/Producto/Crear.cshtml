@@ -1,51 +1,63 @@
 ﻿<style>
-    #principal {
+    .login-form {
         width: 650px;
         height: auto;
         top: 50%;
-        margin-top: 10px;
-        /*border: 1px solid red;*/
-        padding: 5px;
+        margin-top: -10px;
     }
 
-    #td1 {
-        padding-right: 15px;
-        padding-top: 2px;
+    #principal {
+        width: 900px;
+        height: auto;
+        top: 50%;
+        margin-top: 60px;
+        border: 1px solid green;
+        padding: 50px;
+        position: relative;
     }
 </style>
-<h5 style="margin-top:70px; margin-left:20px;color:blue;">Usuario: Pedro Galdames</h5>
-<div class="container" id="principal">
 
+
+
+
+<div class="container" id="principal">
     <h3>Nuevo Producto</h3>
     <hr />
     <form class="bg-white p-6 mx-auto border bd-default win-shadow">
         <table>
-            <tr><td id="td1">Codigo Prod.:</td><td style="padding:2px;width:450px"><input style="text-transform:uppercase;" type="text" data-role="input" data-append="#" class="input-small"></td></tr>
-            <tr><td id="td1">Ingreso:</td><td style="padding-left:2px;"><input type="date" data-role="input" class="input-small" /></td></tr>
             <tr>
-                <td style="padding-right: 15px;padding-top: 2px;">Valoración:</td>
-                <td style="padding:2px;"><input type="text" onkeyup="format(this)" data-role="input" data-append="$.00" class="input-small"></td>
-            </tr>
-            <tr>
-                <td style="padding-right: 15px; padding-top: 2px; ">Imagen:</td>
-                <td style="padding:2px;"><input type="text" data-role="input" data-append="/Ruta" class="input-small"></td>
-            </tr>
-            <tr>
-                <td style="padding-right: 15px;padding-top: 2px">Descripción:</td>
-                <td style="padding:2px;"><textarea data-role="textarea" data-prepend="<span class='mif-leanpub'></span>" class="input-small"></textarea></td>
-            </tr>
-            <tr>
-                <td style="padding-right: 15px;padding-top: 2px;">Estado:</td>
-                <td style="padding:2px;">
-                    <select data-role="select" class="input-small">
-                        <option value="0">Seleccione</option>
-                        <option value="1">Fabricado</option>
-                        <option value="2">En Diseño</option>
+                <td style="padding-right:15px;">Usuario:</td>
+                <td>
+                    <select style="width:400px;" data-role="select" class="input-lg">
+                        <option value="1">User-01</option>
+                        <option value="2">User-03</option>
+                        <option value="3">User-05</option>
                     </select>
                 </td>
             </tr>
-        </table>
+
+            <tr><td style="padding-right:15px;">Codigo Producto:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
+            <tr><td style="padding-right:15px;">Ingreso:</td><td style="padding-top: 10px;"><input style="width:347px;" type="date" data-role="input" class="input-lg" /></td></tr>
+            <tr><td style="padding-right:15px;">Valoración:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" onkeyup="format(this);" data-role="input" data-append="$.00" class="input-lg"></td></tr>
+            <tr><td style="padding-right:15px;">Imagen:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="/Ruta" class="input-lg"></td></tr>
+            <tr><td style="padding-right:15px;">Descripción:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="$.00" class="input-lg"></td></tr>
+            <tr>
+                <td style="padding-right:15px;padding-top:20px;">Estado:</td>
+                <td>
+                    <select style="width:400px;" data-role="select" class="input-lg">
+                        <option value="1">Fabricado</option>
+                        <option value="2">En Diseño</option>
+
+                    </select>
+                </td>
+            </tr>
+        </table><br />
+            <div class="form-group">
+               <button class="button success">Registrar</button>
+               <input type="button" class="button" value="Cancel">
+            </div>
     </form>
+
 </div>
 <script type="text/javascript">
 

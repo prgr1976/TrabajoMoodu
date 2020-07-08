@@ -190,6 +190,7 @@
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\ViewUser.cshtml" />
     <Content Include="Views\User\Modificate.cshtml" />
+    <Content Include="Views\Producto\Inventario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
