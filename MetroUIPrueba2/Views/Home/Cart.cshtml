@@ -139,10 +139,15 @@
         </div>
         <br />
         <div class="container-button-distribution">
-            <button class="w-200 button primary large rounded outline">Productos</button>
+            <input onclick="goBack()" class="w-200 button primary large rounded outline" value="+Productos">
             <button class="w-200 button primary large rounded outline">Vaciar Carro</button>
-            <button class="w-200 button primary large rounded outline">Continuar con la compra</button>
+            <a href="/Home/user_client_choose/" class="w-200 button primary large rounded outline">Continuar con la compra</a>
         </div>
     </div>
 </div>
 
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>

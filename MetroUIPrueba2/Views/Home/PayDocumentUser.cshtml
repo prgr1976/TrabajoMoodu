@@ -15,14 +15,14 @@
         padding-top: 15px;
         margin-top: 50px;
     }
+
     legend {
         font-size: 10px;
     }
-    label {
-        margin-left: 5px;       
-    }
-   
 
+    label {
+        margin-left: 5px;
+    }
 </style>
 
 <div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 500px">
@@ -37,15 +37,19 @@
     </fieldset>
     <br />
     <fieldset class="container">
-        <legend>Persona que Recibe</legend>
-        <form>           
+        <legend>Medio de Pago</legend>
+        <form>
+            <div class="form-group">
+                <input type="radio" data-role="radio" data-caption="Usuario"><br />
+                <input type="radio" data-role="radio" data-caption="Otro">
+            </div>
             <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
                 <label>Nombre:</label>
-                <input type="text" placeholder="Nombre..." style="width: 320px"/>
+                <input type="text" placeholder="Nombre..." style="width: 320px" />
             </div>
             <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
                 <label>RUT:</label>
-                <input type="text" placeholder="Rut..." style="width: 320px; "/>
+                <input type="text" placeholder="Rut..." style="width: 320px; " />
             </div>
             <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
                 <label>Teléfono</label>
@@ -55,36 +59,39 @@
     </fieldset>
     <br />
     <fieldset class="container">
-        <legend>Datos del Documento</legend>
+        <legend>Datos del documento</legend>
         <form>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>Nombre: </label>
-                <input type="text" placeholder="Nombre..." style="width: 320px" />
+                <label>Carlos Marchant</label>
             </div>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>RUT: </label>
-                <input type="text" placeholder="RUT..." style="width: 320px" />
+                <label>1326548989</label>
             </div>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>Direccion:  </label>
-                <input type="text" placeholder="Direccion..." style="width: 320px" />
+                <label>Calle nueva 1234</label>
             </div>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>Región:  </label>
-                <input type="text" placeholder="Región..." style="width: 320px" />
+                <label>Bio Bio</label>
             </div>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>Ciudad:  </label>
-                <input type="text" placeholder="Ciudad..." style="width: 320px" />
+                <label>Concepción</label>
             </div>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>Email:  </label>
-                <input type="text" placeholder="Email..." style="width: 320px" />
+                <label>carlosdsad@yahoo.es</label>
             </div>
-            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
                 <label>Telefono:  </label>
-                <input type="text" placeholder="Telefono..." style="width: 320px" />
-            </div>            
+                <label>3124324</label>
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: row; justify-content: left">
+                <a href="#">Modificar Datos</a>
+            </div>
         </form>
     </fieldset>
     <br />
@@ -142,16 +149,14 @@
         </table>
     </fieldset>
     <br />
-    <fieldset class ="container">
+    <fieldset class="container">
         <legend>Productos</legend>
         <select data-role="select" style="max-width: 200px">
             <option value="visa">visa</option>
             <option value="efectivo">efectivo</option>
         </select>
     </fieldset>
-        <br />
-        <button class="button primary  outline">Pagar</button>
+    <br />
+    <button class="button primary  outline">Pagar</button>
 
 </div>
-   
-
