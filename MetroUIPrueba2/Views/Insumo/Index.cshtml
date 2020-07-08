@@ -13,7 +13,7 @@
 
 
 <div class="container" id="principal">
-    <h3>Lista de Insumo</h3>
+    <table><tr><td><h3>Lista de Insumo</h3></td><td><a href="@Url.Action("Nuevo","Insumo")">Nuevo</a></td></tr></table>
     <hr />
     <table class="table compact">
         <thead>
@@ -22,6 +22,7 @@
                 <th>Descripcion</th>
                 <th>Unidad Medida</th>
                 <th>Categoria</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -30,18 +31,29 @@
                 <td>Manillas de Bronce</td>
                 <td>Unidad</td>
                 <td>Accesorios</td>
+                <td>
+                    <a href="@Url.Action("Ver","Insumo", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Insumo", new {id=1 })">Editar</a>
+                </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Terciado Estructural</td>
                 <td>M2</td>
                 <td>Materia Prima</td>
+                <td><a href="@Url.Action("Ver","Insumo", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Insumo", new {id=1 })">Editar</a>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Pintura Blanca</td>
                 <td>Galon</td>
                 <td>Pinturas</td>
+                <td>
+                    <a href="@Url.Action("Ver","Insumo", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Insumo", new {id=1 })">Editar</a>
+                </td>
             </tr>
         </tbody>
     </table>

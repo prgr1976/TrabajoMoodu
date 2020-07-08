@@ -213,6 +213,8 @@
     <Content Include="Views\Insumo\Ver.cshtml" />
     <Content Include="Views\Insumo\Editar.cshtml" />
     <Content Include="Views\Insumo\Actualizar.cshtml" />
+    <Content Include="Views\Proveedor\Nuevo.cshtml" />
+    <Content Include="Views\Proveedor\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
