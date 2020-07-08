@@ -1,4 +1,61 @@
-﻿@Styles.Render("~/Content/css")
-@Scripts.Render("~/bundles/metro")
+﻿<style>
+#principal {
+        width: 900px;
+        height: auto;
+        top: 50%;
+        margin-top: 60px;
+        border: 1px solid green;
+        padding: 50px;
+        position: relative;
+    }
+</style>
 
-<h1>prueba pedro 050720-22:28</h1>
+
+
+
+<div class="container" id="principal">
+    <h3>Lista de Productos</h3>
+    <hr />
+    <table class="table compact">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Usuario</th>
+                <th>Codigo</th>
+                <th>Ingreso</th>
+                <th>Valoracion</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>User-01</td>
+                <td>PD-19</td>
+                <td>20-02-2018</td>
+                <td>$ 650.000</td>
+                <td>La descripcion...</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>User-05</td>
+                <td>PD-360</td>
+                <td>30-03-2020</td>
+                <td>$ 450.000</td>
+                <td>La descripcion2...</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>User-01</td>
+                <td>PD-05</td>
+                <td>29-02.2018</td>
+                <td>$ 200.000</td>
+                <td>La descripcion3...</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+

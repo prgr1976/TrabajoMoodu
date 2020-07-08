@@ -204,6 +204,10 @@
     <Content Include="Views\Producto\Comodas.cshtml" />
     <Content Include="Views\Producto\ComodasCR.cshtml" />
     <Content Include="Views\Producto\Camas.cshtml" />
+    <Content Include="Views\Producto\Nuevo.cshtml" />
+    <Content Include="Views\Producto\Ver.cshtml" />
+    <Content Include="Views\Producto\Editar.cshtml" />
+    <Content Include="Views\Producto\Actualizar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
