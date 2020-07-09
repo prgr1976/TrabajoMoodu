@@ -43,8 +43,13 @@
     }
     .container-direction-rigth {
         display: flex;
-        flex-direction: column;
-        
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+    .container-footer-buttons-distribution {
+        display: flex;
+        justify-content: space-around;       
     }
  
 </style>
@@ -118,13 +123,25 @@
         <div class="grid border bd-default">
             <div class="row">
                 <div class="cell-8">
-       
+
                 </div>
-                <div class="cell-4 container-direction-rigth">                    
-                     <label>Subtotal: $200.000</label>
-                     <label>Total: $238.000</label>                    
+                <div class="cell-4 ">
+                    <div class="container-direction-rigth">
+                        <label>Subtotal:</label>
+                        <label>$200.000</label>
+                    </div>
+                    <div class="container-direction-rigth">
+                        <label>Total:</label>
+                        <label>$238.000</label>
+                    </div>
                 </div>
             </div>
+        </div>
+        <br />
+        <div class="container-button-distribution">
+            <button class="w-200 button primary large rounded outline">Productos</button>
+            <button class="w-200 button primary large rounded outline">Vaciar Carro</button>
+            <button class="w-200 button primary large rounded outline">Continuar con la compra</button>
         </div>
     </div>
 </div>
