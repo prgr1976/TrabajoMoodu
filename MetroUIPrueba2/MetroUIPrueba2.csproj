@@ -194,6 +194,7 @@
     <Content Include="Views\Producto\Inventario.cshtml" />
     <Content Include="Views\Insumo\Crear.cshtml" />
     <Content Include="Views\Insumo\Inventario.cshtml" />
+    <Content Include="Views\Home\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
