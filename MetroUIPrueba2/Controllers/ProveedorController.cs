@@ -6,31 +6,22 @@ using System.Web.Mvc;
 
 namespace MetroUIPrueba2.Controllers
 {
-    public class ProductoController : Controller
+    public class ProveedorController : Controller
     {
-        // GET: Producto
+        // GET: Proveedor
         public ActionResult Index()
         {
             return View();
         }
-
         public ActionResult Crear()
         {
             return View();
         }
-        public ActionResult Inventario()
+        public ActionResult Ver()
         {
             return View();
         }
-        public ActionResult Closets()
-        {
-            return View();
-        }
-        public ActionResult ClosetsCR()
-        {
-            return View();
-        }
-        public ActionResult Comedores()
+        public ActionResult Editar()
         {
             return View();
         }
