@@ -201,6 +201,7 @@
     <Content Include="Views\Producto\ClosetsCR.cshtml" />
     <Content Include="Views\Producto\Comedores.cshtml" />
     <Content Include="Views\Producto\Closets.cshtml" />
+    <Content Include="Views\Producto\ClosetsCopia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
