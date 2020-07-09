@@ -198,10 +198,10 @@
     <Content Include="Views\Home\Cart.cshtml" />
     <Content Include="Views\Proveedor\Crear.cshtml" />
     <Content Include="Views\Proveedor\Index.cshtml" />
-    <Content Include="Views\Producto\ClosetsCR.cshtml" />
+    <Content Include="Views\Producto\ClosetsCR-xxx.cshtml" />
     <Content Include="Views\Producto\Comedores.cshtml" />
     <Content Include="Views\Producto\Closets.cshtml" />
-    <Content Include="Views\Producto\ClosetsCopia.cshtml" />
+    <Content Include="Views\Producto\ClosetsCR.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

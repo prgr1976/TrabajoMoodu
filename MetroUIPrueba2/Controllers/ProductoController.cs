@@ -34,5 +34,17 @@ namespace MetroUIPrueba2.Controllers
         {
             return View();
         }
+        public ActionResult Comodas()
+        {
+            return View();
+        }
+        public ActionResult ComodasCR()
+        {
+            return View();
+        }
+        public ActionResult Camas()
+        {
+            return View();
+        }
     }
 }
