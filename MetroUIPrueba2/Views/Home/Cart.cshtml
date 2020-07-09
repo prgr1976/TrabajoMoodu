@@ -7,20 +7,52 @@
     .container-direction {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        text-align: center;      
+    }
+    .label_color_compras {
+        background-color: #CCCCCC;
+    }
+    .label_color_tipo_despacho {
+        color:azure;
+        background-color: #212529;
+    }
+    .container-button-distribution {
+        display: flex;
+        justify-content: space-between;        
+    }
+    .images-xy {
+        width: 200px;
+        height: 120px;
     }
 </style>
 
-<div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 800px">
-    <div class="container-direction" style="margin: 0 auto;">
-        <label>Mi carro de compras</label>
-        <label>Seleccionar tipo de despacho</label>
-        <div>
+<div class="container p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; width: 800px;">
+    <div class="container-direction bg-lightGreen-hover" style="margin: 0 auto;">        
+        <label class="label_color_compras">Mi carro de compras</label>
+        <label class="label_color_tipo_despacho">Seleccionar tipo de despacho</label>
+        <div class="container-button-distribution">
             <input type="radio" data-role="radio" data-caption="Despacho a domicilio">
             <input type="radio" data-role="radio" data-caption="Retiro en tienda">
         </div>
-        <div>
-           
+        <div class="grid">
+            <div class="row">
+                <div class="cell-3">
+                    <div class="img-container rounded">
+                        <img class="images-xy" src="https://images.contentful.com/5de70he6op10/KieWCVz2oqb0ZCkbafehQ/cfbe61c1584a6361ee047b652f8919ac/Furniture__Gateway_LP_LS_06.jpg?w=934&q=80&fm=webp"/>
+                    </div>
+                </div>
+                <div class="cell-6">
+                    <div>
+                        <p>Mesa1 de madera estilo elegante</p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="cell-3">
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
