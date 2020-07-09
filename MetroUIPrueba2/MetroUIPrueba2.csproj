@@ -194,6 +194,8 @@
     <Content Include="Views\Producto\Inventario.cshtml" />
     <Content Include="Views\Insumo\Crear.cshtml" />
     <Content Include="Views\Insumo\Inventario.cshtml" />
+    <Content Include="Views\Producto\ClosetsCR.cshtml" />
+    <Content Include="Views\Producto\Comedores.cshtml" />
     <Content Include="Views\Producto\Closets.cshtml" />
   </ItemGroup>
   <ItemGroup>

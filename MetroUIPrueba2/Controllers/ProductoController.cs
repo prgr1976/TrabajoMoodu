@@ -26,6 +26,13 @@ namespace MetroUIPrueba2.Controllers
         {
             return View();
         }
-
+        public ActionResult ClosetsCR()
+        {
+            return View();
+        }
+        public ActionResult Comedores()
+        {
+            return View();
+        }
     }
 }
