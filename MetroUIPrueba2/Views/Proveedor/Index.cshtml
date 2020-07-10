@@ -14,7 +14,7 @@
 
 <div class="container" id="principal">
     <h3>Lista de Proveedores</h3>
-    <table><tr><td><a href="@Url.Action("Nuevo","Proveedor")">Nuevo/</a></td><td><a href="@Url.Action("Index","Producto")">Producto/</a></td><td><a href="@Url.Action("Index","Insumo")">Insumos/</a></td></tr></table>
+    <table><tr><td><a href="@Url.Action("Nuevo","Proveedor")">Nuevo/</a></td><td><a href="@Url.Action("Index","Insumo")">Insumos/</a></td><td><a href="@Url.Action("Index","Producto")">Producto/</a></td></tr></table>
     <hr />
     <table class="table compact">
         <thead>
@@ -24,6 +24,7 @@
                 <th>Dirección</th>
                 <th>Email</th>
                 <th>Categoria</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +34,10 @@
                 <td>Los Avellanos # 675</td>
                 <td>ep@email.com</td>
                 <td>Pinturas</td>
+                <td>
+                    <a href="@Url.Action("Ver","Proveedor", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Proveedor", new {id=1 })">Editar</a>
+                </td>
             </tr>
             <tr>
                 <td>Prodema S.A</td>
@@ -40,6 +45,10 @@
                 <td>Padre Lorenzo Eiting #5893</td>
                 <td>prodema@email.com</td>
                 <td>Materia Prima</td>
+                <td>
+                    <a href="@Url.Action("Ver","Proveedor", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Proveedor", new {id=1 })">Editar</a>
+                </td>
             </tr>
             <tr>
                 <td>Gretsch-Unitas</td>
@@ -47,6 +56,10 @@
                 <td> Camino Los Carros #1955</td>
                 <td>gu@email.com</td>
                 <td>Cerraduras</td>
+                <td>
+                    <a href="@Url.Action("Ver","Proveedor", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Proveedor", new {id=1 })">Editar</a>
+                </td>
             </tr>
         </tbody>
     </table>
