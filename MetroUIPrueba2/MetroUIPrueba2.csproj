@@ -202,7 +202,6 @@
     <Content Include="Views\Producto\Closets.cshtml" />
     <Content Include="Views\Producto\ClosetsCR.cshtml" />
     <Content Include="Views\Producto\Comodas.cshtml" />
-    <Content Include="Views\Producto\ComodasCRxxx.cshtml" />
     <Content Include="Views\Producto\Camas.cshtml" />
     <Content Include="Views\Producto\Nuevo.cshtml" />
     <Content Include="Views\Producto\Ver.cshtml" />

@@ -15,6 +15,7 @@
 
 <div class="container" id="principal">
     <h3>Lista de Productos</h3>
+    <table><tr><td><a href="@Url.Action("Nuevo","Producto")">Nuevo/</a></td><td><a href="@Url.Action("Index","Insumo")">Insumos/</a></td><td><a href="@Url.Action("Index","Proveedor")">Proveedores</a></td></tr></table>
     <hr />
     <table class="table compact">
         <thead>
@@ -25,6 +26,7 @@
                 <th>Ingreso</th>
                 <th>Valoracion</th>
                 <th>Descripción</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -35,6 +37,10 @@
                 <td>20-02-2018</td>
                 <td>$ 650.000</td>
                 <td>La descripcion...</td>
+                <td>
+                    <a href="@Url.Action("Ver","Producto", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Producto", new {id=1 })">Editar</a>
+                </td>
             </tr>
             <tr>
                 <td>2</td>
@@ -43,6 +49,10 @@
                 <td>30-03-2020</td>
                 <td>$ 450.000</td>
                 <td>La descripcion2...</td>
+                <td>
+                    <a href="@Url.Action("Ver","Producto", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Producto", new {id=1 })">Editar</a>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
@@ -51,6 +61,10 @@
                 <td>29-02.2018</td>
                 <td>$ 200.000</td>
                 <td>La descripcion3...</td>
+                <td>
+                    <a href="@Url.Action("Ver","Producto", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Producto", new {id=1 })">Editar</a>
+                </td>
             </tr>
         </tbody>
     </table>
