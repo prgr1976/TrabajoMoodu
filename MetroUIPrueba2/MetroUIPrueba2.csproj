@@ -207,6 +207,13 @@
     <Content Include="Views\Producto\Ver.cshtml" />
     <Content Include="Views\Producto\Editar.cshtml" />
     <Content Include="Views\Producto\Actualizar.cshtml" />
+    <Content Include="Views\Insumo\Nuevo.cshtml" />
+    <Content Include="Views\Insumo\Index.cshtml" />
+    <Content Include="Views\Insumo\Ver.cshtml" />
+    <Content Include="Views\Insumo\Editar.cshtml" />
+    <Content Include="Views\Insumo\Actualizar.cshtml" />
+    <Content Include="Views\Shared\_IntranetLayout.cshtml" />
+    <Content Include="Views\Home\Intranet.cshtml" />
     <Content Include="Views\Producto\Disenno.cshtml" />
     <Content Include="Views\Producto\ComodasCR.cshtml" />
   </ItemGroup>
