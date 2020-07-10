@@ -15,21 +15,21 @@
 
 
 <div class="container" id="principal">
-    <h3>Editar Proveedor</h3>
-    <table><tr><td><a href="@Url.Action("Index","Proveedor")">Proveedor/</a></td><td><a href="@Url.Action("Index","Insumo")">Insumos/</a></td><td><a href="@Url.Action("Index","Producto")">Producto</a></td></tr></table>
+    <h3>Ver Proveedor</h3>
+    <table><tr><td><a href="@Url.Action("Index","Proveedor")">Index/</a></td><td><a href="@Url.Action("Index","Insumo")">Insumos/</a></td><td><a href="@Url.Action("Index","Producto")">Producto</a></td></tr></table>
     <hr />
     <form class="bg-white p-6 mx-auto border bd-default win-shadow">
         <table>
-            <tr><td style="padding-right:15px;">Razón Social:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value= "Promad Ltda." data-append="#" class="input-lg"></td></tr>
-            <tr><td style="padding-right:15px;">R.U.T:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="80.667.342-k"  data-append="#" class="input-lg"></td></tr>
-            <tr><td style="padding-right:15px;">Dirección:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="Los abedules # 1234" data-append="#" class="input-lg"></td></tr>
-            <tr><td style="padding-right:15px;">Teléfono:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="+56 9 67854377" data-append="#" class="input-lg"></td></tr>
-            <tr><td style="padding-right:15px;">Email:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="infoPromad@gmail.com" data-append="#" class="input-lg"></td></tr>
+            <tr><td style="padding-right:15px;">Razón Social:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="Promad Ltda." data-append="#" class="input-lg" disabled="disabled"></td></tr>
+            <tr><td style="padding-right:15px;">R.U.T:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="80.667.342-k" data-append="#" class="input-lg" disabled="disabled"></td></tr>
+            <tr><td style="padding-right:15px;">Dirección:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="Los abedules # 1234" data-append="#" class="input-lg" disabled="disabled"></td></tr>
+            <tr><td style="padding-right:15px;">Teléfono:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="+56 9 67854377" data-append="#" class="input-lg" disabled="disabled"></td></tr>
+            <tr><td style="padding-right:15px;">Email:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" value="infoPromad@gmail.com" data-append="#" class="input-lg" disabled="disabled"></td></tr>
 
             <tr>
                 <td style="padding-right:15px;">Región:</td>
                 <td style="padding-top:10px;">
-                    <select style="width:400px;" data-role="select" class="input-lg">
+                    <select style="width:400px;" data-role="select" class="input-lg" disabled="disabled">
                         <option value="1">Metropolitana</option>
                         <option value="2">Bio-Bio</option>
                         <option value="3">Valparaiso</option>
@@ -39,7 +39,7 @@
             <tr>
                 <td style="padding-right:15px;">Comuna:</td>
                 <td style="padding-top:10px;">
-                    <select style="width:400px; margin-top:10px;" data-role="select" class="input-lg">
+                    <select style="width:400px; margin-top:10px;" data-role="select" class="input-lg" disabled="disabled">
                         <option value="1">Providencia</option>
                         <option value="2">Valparaiso</option>
                         <option value="3">Concepcion</option>
@@ -49,7 +49,7 @@
             <tr>
                 <td style="padding-right:15px;">Categoria:</td>
                 <td style="padding-top:10px;">
-                    <select style="width:400px;" data-role="select" class="input-lg">
+                    <select style="width:400px;" data-role="select" class="input-lg" disabled="disabled">
                         <option value="1">Materia Prima</option>
                         <option value="2">Accesorios</option>
                         <option value="3">Pintura</option>
@@ -59,10 +59,7 @@
 
 
         </table><br />
-        <div class="form-group">
-            <button class="button success">Actualizar</button>
-            <input type="button" class="button" value="Cancel">
-        </div>
+        
     </form>
 
 </div>
@@ -82,4 +79,5 @@
         }
     }
 </script>
+
 
