@@ -1,148 +1,139 @@
-﻿@*<script>
-function sortList(col, dir) {
-    $('#comodascr').data('list').sorting(col,dir,true)
-}
-</script>*@
-
-<p class="text-center h3 text-light">Sort by</p>
+﻿<p class="text-center h3 text-light">Sort by</p>
 <div class="container">
     <ul id="comodascr"
         data-list-search-title="Buscar:"
         data-role="list"
         data-show-search="true"
         data-search-wrapper="#icon-search"
-        data-sort-class="autor-comodascr"
-        data-sort-dir="desc"
+        data-sort-class="precio-comodascr"
+        data-sort-dir="asc"
         data-cls-list="unstyled-list row flex-justify-center mt-4"
         data-cls-list-item="cell-sm-6 cell-md-4">
         <li>
             <figure class="text-center">
                 <div class="img-container thumbnail">
-                    <img src="~/pics/closets/closet_02.jpg" alt="Closet Caburgua Cerezo 2P">
+                    <img src="~/pics/comodas/comoda_03.jpg" alt="Comoda Polux Wengue">
                 </div>
                 <div class="row">
                     <div class="cell-md-4">
-                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.20mt, Max: 1.80mt" font-style="f">Alto</p>
-                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.20" data-max-value="1.80" />
-                        @*<p style="font-size:11px">Min: 1.20mt, Max: 1.80mt</p>*@
-                    </div>
-                    <div class="cell-md-4">
-                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.80mt, Max: 1.10mt" data-hint-color="fg-white" data-hint-background="bg-green">Ancho</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.80mt, Max: 1.10mt">Alto</p>
                         <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="0.80" data-max-value="1.10" />
-                        @*<p style="font-size:11px">min: 0.80mt, max: 1.10mt</p>*@
                     </div>
                     <div class="cell-md-4">
-                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.55mt">Fondo</p>
-                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.55"/>
-                        @*<p style="font-size:11px">Min: 0.30mt, Max: 0.55mt</p>*@
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.00mt, Max: 1.20mt">Ancho</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.00" data-max-value="1.20" />
+                    </div>
+                    <div class="cell-md-4">
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.70mt">Fondo</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.70"/>
                     </div>
                 </div>
                 <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
-                <figcaption class="autor-comodascr text-bold">Closet Caburgua Cerezo 2 Puertas</figcaption>
-                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">Hermoso y práctico closet con toda la calidad que entrega nuestra marca. Ideal para dormitorios de tamaño medio y grande incorporando las puertas corredera ideal para no perder más espacio al momento de abrir las puertas, este modelo contiene diversos compartimientos para colgar ropa, almacenar en repisas y un espacio superior disponibles para guardar ropa de cama o aquello que no usas a menudo</figcaption>
+                <figcaption class="autor-comodascr text-bold">Comoda Polux Wengue</figcaption>
+                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">Decora tu dormitorio dándole elegancia y utilidad a los espacios. La cómoda Polux se compone de 8 cajones, rieles metálicos y materiales de primer nivel, ideal para guardar todas tus pertenecías en forma ordenada. No dudes en que sea tuya.</figcaption>
+                <div class="row">
+                    <div class="col-md-8"><p class="mt-0" style="text-align:left;font-size:14px;font-weight:bold">Precio contado</p></div>
+                    <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 180.000</figcaption></div>
+                </div>
+                <div class="cells row">
+                    <div class="cell-4"><input type="text" class="input-small" data-role="spinner" data-step="1" data-min-value="0" data-max-value="10" style="vertical-align" /></div>
+                    <div class="cell-1"><a href="~/Home/user_client_choose" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
+                </div>
+            </figure>
+        </li>
+        <li>
+            <figure class="text-center">
+                <div class="img-container thumbnail">
+                    <img src="~/pics/comodas/comoda_02.jpg" alt="Comoda Altair">
+                </div>
+                <div class="row">
+                    <div class="cell-md-4">
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.80mt, Max: 1.10mt">Alto</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="0.80" data-max-value="1.10" />
+                    </div>
+                    <div class="cell-md-4">
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.00mt, Max: 1.20mt">Ancho</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.00" data-max-value="1.20" />
+                    </div>
+                    <div class="cell-md-4">
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.55mt">Fondo</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.55" />
+                    </div>
+                </div>
+                <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
+                <figcaption class="autor-comodascr text-bold">Comoda Altair</figcaption>
+                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">Cómoda modelo Altair, cuenta con 6 cajones, con un perfecto acabado de color Nogal que crea un ambiente perfecto, ideal para integrarlo a la decoración de tu hogar.</figcaption>
                 <div class="row">
                     <div class="col-md-8"><p class="mt-0" style="text-align:left;font-size:14px;font-weight:bold">Precio contado</p></div>
                     <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 150.000</figcaption></div>
                 </div>
                 <div class="cells row">
                     <div class="cell-4"><input type="text" class="input-small" data-role="spinner" data-step="1" data-min-value="0" data-max-value="10" style="vertical-align" /></div>
-                    <div class="cell-1"><a href="~/Home/Login" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
+                    <div class="cell-1"><a href="~/Home/user_client_choose" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
                 </div>
             </figure>
         </li>
         <li>
             <figure class="text-center">
                 <div class="img-container thumbnail">
-                    <img src="~/pics/closets/closet_05.jpg" alt="Closet Favatex Delf 3P Corredera 2C">
+                    <img src="~/pics/comodas/comoda_01.jpg" alt="Comoda Baker Grafito">
                 </div>
                 <div class="row">
                     <div class="cell-md-4">
-                        <p style="font-size:14px">Alto</p>
-                        <p style="font-size:12px">1.45mt</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.00mt, Max: 1.20mt">Alto</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.00" data-max-value="1.20" />
                     </div>
                     <div class="cell-md-4">
-                        <p style="font-size:14px">Ancho</p>
-                        <p style="font-size:12px">1.20mt</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.00mt, Max: 1.30mt">Ancho</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.00" data-max-value="1.30" />
                     </div>
                     <div class="cell-md-4">
-                        <p style="font-size:14px">Fondo</p>
-                        <p style="font-size:12px">0.51mt</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.55mt">Fondo</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.55" />
                     </div>
                 </div>
                 <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
-                <figcaption class="autor-comodascr text-bold">Closet Favatex Delf 3P Corredera 2C</figcaption>
-                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">Hermoso y práctico closet con toda la calidad que entrega nuestra marca. Ideal para dormitorios de tamaño medio y grande incorporando las puertas corredera ideal para no perder más espacio al momento de abrir las puertas, este modelo contiene diversos compartimientos para colgar ropa, almacenar en repisas y además 4 cajones.</figcaption>
+                <figcaption class="autor-comodascr text-bold">Comoda Baker Grafito</figcaption>
+                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">La cómoda Baker, tiene 4 cajones, 2 más pequeños en la parte de arriba y 2 más grandes en la parte inferior. Cada cajón tiene apertura a través de rieles telescópicos, que le dan mayor firmeza y suavidad en la apertura.</figcaption>
                 <div class="row">
                     <div class="col-md-8"><p class="mt-0" style="text-align:left;font-size:14px;font-weight:bold">Precio contado</p></div>
-                    <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 680.000</figcaption></div>
+                    <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 190.990</figcaption></div>
                 </div>
                 <div class="cells row">
                     <div class="cell-4"><input type="text" class="input-small" data-role="spinner" data-step="1" data-min-value="0" data-max-value="10" style="vertical-align" /></div>
-                    <div class="cell-1"><a href="~/Home/Login" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
+                    <div class="cell-1"><a href="~/Home/user_client_choose" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
                 </div>
             </figure>
         </li>
         <li>
             <figure class="text-center">
                 <div class="img-container thumbnail">
-                    <img src="~/pics/closets/closet_01.jpg" alt="Closet Yardas Puerta con Espejo">
+                    <img src="~/pics/comodas/comoda_04.jpg" alt="Comoda Baker Caramelo">
                 </div>
                 <div class="row">
                     <div class="cell-md-4">
-                        <p style="font-size:14px">Alto</p>
-                        <p style="font-size:12px">2.10mt</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.00mt, Max: 1.20mt">Alto</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.00" data-max-value="1.20" />
                     </div>
                     <div class="cell-md-4">
-                        <p style="font-size:14px">Ancho</p>
-                        <p style="font-size:12px">2.40mt</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.00mt, Max: 1.30mt">Ancho</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".10" data-fixed="2" data-min-value="1.00" data-max-value="1.30" />
                     </div>
                     <div class="cell-md-4">
-                        <p style="font-size:14px">Fondo</p>
-                        <p style="font-size:12px">0.55mt</p>
+                        <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.55mt">Fondo</p>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.55" />
                     </div>
                 </div>
                 <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
-                <figcaption class="autor-comodascr text-bold">Closet Yardas Puerta con Espejo 2 Cajones y 2 Puertas</figcaption>
-                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">Hermoso y práctico closet con toda la calidad que entrega nuestra marca. Ideal para dormitorios de tamaño medio incorporando las puertas corredera ideal para no perder más espacio al momento de abrir las puertas, este modelo contiene diversos compartimientos para colgar ropa, almacenar en repisas y además 4 cajones.</figcaption>
+                <figcaption class="autor-comodascr text-bold">Comoda Baker Caramelo</figcaption>
+                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">La cómoda Baker, tiene 4 cajones, 2 más pequeños en la parte de arriba y 2 más grandes en la parte inferior. Cada cajón tiene apertura a través de rieles telescópicos, que le dan mayor firmeza y suavidad en la apertura.</figcaption>
                 <div class="row">
                     <div class="col-md-8"><p class="mt-0" style="text-align:left;font-size:14px;font-weight:bold">Precio contado</p></div>
-                    <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 680.000</figcaption></div>
+                    <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 190.990</figcaption></div>
                 </div>
                 <div class="cells row">
                     <div class="cell-4"><input type="text" class="input-small" data-role="spinner" data-step="1" data-min-value="0" data-max-value="10" style="vertical-align" /></div>
-                    <div class="cell-1"><a href="~/Home/Login" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
-                </div>
-            </figure>
-        </li>
-        <li>
-            <figure class="text-center">
-                <div class="img-container thumbnail">
-                    <img src="~/pics/closets/closet_04.jpg" alt="Closet Caburgua Walnut 2 Puertas y 4 cajones">
-                </div>
-                <div class="row">
-                    <div class="cell-md-4">
-                        <p style="font-size:14px">Alto</p>
-                        <p style="font-size:12px">2.10mt</p>
-                    </div>
-                    <div class="cell-md-4">
-                        <p style="font-size:14px">Ancho</p>
-                        <p style="font-size:12px">2.40mt</p>
-                    </div>
-                    <div class="cell-md-4">
-                        <p style="font-size:14px">Fondo</p>
-                        <p style="font-size:12px">0.55mt</p>
-                    </div>
-                </div>
-                <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
-                <figcaption class="autor-comodascr text-bold">Closet Caburgua Walnut 2 Puertas y 4 cajones</figcaption>
-                <figcaption class="nombre-comodascr" style="text-align:justify; font-size:12px">Hermoso y práctico closet con toda la calidad que entrega nuestra marca. Ideal para dormitorios de tamaño medio incorporando las puertas corredera ideal para no perder más espacio al momento de abrir las puertas, este modelo contiene diversos compartimientos para colgar ropa, almacenar en repisas y 2 cajones en su interior.</figcaption>
-                <div class="row">
-                    <div class="col-md-8"><p class="mt-0" style="text-align:left;font-size:14px;font-weight:bold">Precio contado</p></div>
-                    <div class="col-md-4"><figcaption style="color:red;text-align:right;font-size:14px" class="precio-comodascr text-bold" data-format="money">$ 680.000</figcaption></div>
-                </div>
-                <div class="cells row">
-                    <div class="cell-4"><input type="text" class="input-small" data-role="spinner" data-step="1" data-min-value="0" data-max-value="10" style="vertical-align" /></div>
-                    <div class="cell-1"><a href="~/Home/Login" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
+                    <div class="cell-1"><a href="~/Home/user_client_choose" title="Agregar producto(s) a la canasta"><span class="mif-add-shopping-cart mif-2x"></span></a></div>
                 </div>
             </figure>
         </li>
