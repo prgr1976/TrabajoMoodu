@@ -190,8 +190,8 @@
     <Content Include="Views\Home\product_selected.cshtml" />
     <Content Include="Views\Home\Mesas.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
-    <Content Include="Views\User\ViewUser.cshtml" />
-    <Content Include="Views\User\Modificate.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\Producto\Inventario.cshtml" />
     <Content Include="Views\Insumo\Crear.cshtml" />
     <Content Include="Views\Insumo\Inventario.cshtml" />
@@ -219,6 +219,7 @@
     <Content Include="Views\Proveedor\Nuevo.cshtml" />
     <Content Include="Views\Proveedor\Editar.cshtml" />
     <Content Include="Views\Proveedor\Ver.cshtml" />
+    <Content Include="Views\User\RecoverPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

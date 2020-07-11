@@ -49,7 +49,8 @@
     }
     .container-footer-buttons-distribution {
         display: flex;
-        justify-content: space-around;       
+        justify-content: space-between;   
+        
     }
  
 </style>
@@ -139,9 +140,9 @@
         </div>
         <br />
         <div class="container-button-distribution">
-            <input onclick="goBack()" class="w-200 button primary large rounded outline" value="+Productos">
-            <button class="w-200 button primary large rounded outline">Vaciar Carro</button>
-            <a href="/Home/user_client_choose/" class="w-200 button primary large rounded outline">Continuar con la compra</a>
+            <button onclick="goBack()" class="w-100 button primary large rounded outline"><span class="mif-add-shopping-cart"></span>Productos</button>
+            <button class="w-100 button primary large rounded outline"><span class="mif-bin"></span>Vaciar Carro</button>
+            <a href="/Home/user_client_choose/" class="w-100 button primary large rounded outline">Continuar con la compra <span class="mif-arrow-right"></span></a>
         </div>
     </div>
 </div>

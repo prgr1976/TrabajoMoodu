@@ -1,17 +1,39 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<style>
+    .imagen_pos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px 20px 20px;
+    }   
+</style>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="container bg-white p-6 mx-auto border bd-default win-shadow" 
+     style="margin-top:100px; max-width: 800px; display:flex; flex-direction:row">  
+    <div class="img-container rounded imagen_pos" style="width:400px">
+        <img src="https://www.prospectivedoctor.com/wp-content/uploads/2017/07/letter-mail-envelope.jpg"/>
+    </div>
+    <div class="container">
+        <form >
+            <label>Contactenos:</label>
+            <div class="form-group">
+                <input type="text" data-role="input" placeholder="Nombre...">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email..." data-role="input" />
+            </div>
+            <div class="form-group">
+                <input type="text" data-role="input" placeholder="Objeto...">
+            </div>
+            <div class="form-group">
+                <textarea data-role="textarea" placeholder="Escriba su consulta..." data-prepend="<span class='mif-leanpub'></span>"></textarea>
+            </div>
+            <div class="form-group">
+                <a href="/Home/Index" class="button primary outline" style="width:100px">Enviar</a>
+            </div>
+        </form>
+    </div>    
+</div>
