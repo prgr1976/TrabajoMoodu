@@ -59,5 +59,9 @@ namespace MetroUIPrueba2.Controllers
         {
             return View();
         }
+        public ActionResult Disenno()
+        {
+            return View();
+        }
     }
 }

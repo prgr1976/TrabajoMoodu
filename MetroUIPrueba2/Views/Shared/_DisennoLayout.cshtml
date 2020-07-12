@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/metro")
+</head>
+<body>
+    <aside class="sidebar pos-absolute z-2"
+           data-role="sidebar"
+           data-toggle="#sidebar-toggle-3"
+           id="sb3"
+           data-shift=".shifted-content">
+        <ul class="sidebar-menu">
+            <li><a href="/Producto/ComodasCR"><span class="mif-map icon"></span>Diseño Comodas</a></li>
+            <li><a href="/Producto/ClosetsCR"><span class="mif-table icon"></span>Diseño Closets</a></li>
+            <li class="divider"></li>
+            <li><a href="/Home"><span class="mif-exit icon"></span>Salir</a></li>
+        </ul>
+    </aside>
+    <div class="shifted-content h-100 p-ab">
+        <div class="app-bar pos-absolute bg-red z-1" data-role="appbar">
+            <button class="app-bar-item c-pointer" id="sidebar-toggle-3">
+                <span class="mif-menu fg-white"></span>
+            </button>
+        </div>
+        <div class="h-100 p-4">
+            @RenderBody()
+        </div>
+    </div>
+   
+</body>
+</html>

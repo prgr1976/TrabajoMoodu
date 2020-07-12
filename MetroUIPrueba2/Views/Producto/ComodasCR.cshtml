@@ -1,4 +1,8 @@
-﻿<p class="text-center h3 text-light">Sort by</p>
+﻿@{
+    ViewBag.Title = "Comodas";
+    Layout = "~/Views/Shared/_DisennoLayout.cshtml";
+}
+<p class="text-center h3 text-light">Sort by</p>
 <div class="container">
     <ul id="comodascr"
         data-list-search-title="Buscar:"
@@ -25,7 +29,7 @@
                     </div>
                     <div class="cell-md-4">
                         <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.70mt">Fondo</p>
-                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.70"/>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.70" />
                     </div>
                 </div>
                 <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
