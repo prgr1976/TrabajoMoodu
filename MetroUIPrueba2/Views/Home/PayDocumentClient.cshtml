@@ -150,7 +150,12 @@
         </select>
     </fieldset>
     <br />
-    <a href="#" class="button primary  outline">Pagar</a>
-
+    <a href="/Home/Index" class="button primary outline" style="width:100px">Pagar</a>
+    <input onclick="goBack()" class="button primary outline" value="Atrás" style="width:100px" />
 </div>
 
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>

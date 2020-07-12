@@ -3,81 +3,85 @@
     ViewBag.Title = "Create";
 }
 
-    <style>
-        fieldset {
-            border: 1px solid #0366d6;
-            text-align: start;
-            text-space-collapse: preserve;
-            padding-bottom: 20px;
-            padding-top: 15px;
-            margin-top: 50px;
-        }
+<style>
+    fieldset {
+        border: 1px solid #0366d6;
+        text-align: start;
+        text-space-collapse: preserve;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        margin-top: 50px;
+    }
 
-        legend {
-            font-size: 10px;
-        }
+    legend {
+        font-size: 10px;
+    }
 
-        label {
-            margin-left: 5px;
-        }
-    </style>
+    label {
+        margin-left: 5px;
+    }
+</style>
 
-    <div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 600px">
-        <label>Registro de Usuario</label>       
-        <fieldset class="container">
-            <legend>Datos de Cliente</legend>
-            <form>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Nombres:</label>
-                    <input type="text" placeholder="Nombres..." style="width: 320px" />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Apellidos:</label>
-                    <input type="text" placeholder="Apellidos..." style="width: 320px; " />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Dirección</label>
-                    <input type="text" placeholder="Dirección..." style="width: 320px" />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Email..." style="width: 320px" />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Teléfono:</label>
-                    <input type="text" placeholder="Teléfono..." style="width: 320px; " />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Ciudad</label>
-                    <input type="text" placeholder="Ciudad..." style="width: 320px" />
-                </div>
-            </form>
-        </fieldset>
-        <br />
-        <fieldset class="container">
-            <legend>Datos de Usuario del Sistema</legend>
-            <form>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Nick</label>
-                    <input type="text" placeholder="Nombre de Usuario:..." style="width: 320px" />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Contraseña:</label>
-                    <input type="password" placeholder="Contraseña..." style="width: 320px; " />
-                </div>
-                <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
-                    <label>Repita la Contraseña</label>
-                    <input type="password" placeholder="Contraseña..." style="width: 320px" />
-                </div>
-            </form>
-        </fieldset>
-        <br />
-        <div class="form-group">
-            <button class="button default outline">Ingresar</button>
-            <input type="button" class="button default outline" value="Atras">
-        </div>
+<div class="container bg-white p-6 mx-auto border bd-default win-shadow" style="margin-top:100px; max-width: 600px">
+    <label>Registro de Usuario</label>
+    <fieldset class="container">
+        <legend>Datos de Cliente</legend>
+        <form>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Nombres:</label>
+                <input type="text" placeholder="Nombres..." style="width: 320px" />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Apellidos:</label>
+                <input type="text" placeholder="Apellidos..." style="width: 320px; " />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Dirección</label>
+                <input type="text" placeholder="Dirección..." style="width: 320px" />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Email:</label>
+                <input type="email" placeholder="Email..." style="width: 320px" />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Teléfono:</label>
+                <input type="text" placeholder="Teléfono..." style="width: 320px; " />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Ciudad</label>
+                <input type="text" placeholder="Ciudad..." style="width: 320px" />
+            </div>
+        </form>
+    </fieldset>
+    <br />
+    <fieldset class="container">
+        <legend>Datos de Usuario del Sistema</legend>
+        <form>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Nick</label>
+                <input type="text" placeholder="Nombre de Usuario:..." style="width: 320px" />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Contraseña:</label>
+                <input type="password" placeholder="Contraseña..." style="width: 320px; " />
+            </div>
+            <div class="form-group" style="display: flex; justify-content:space-between; align-items: center">
+                <label>Repita la Contraseña</label>
+                <input type="password" placeholder="Contraseña..." style="width: 320px" />
+            </div>
+        </form>
+    </fieldset>
+    <br />
+    <div class="form-group">
+        <input onclick="goBack()" class="button primary outline" value="Ingresar" style="width:100px" />
+        <input onclick="goBack()" class="button primary outline" value="Atrás" style="width:100px" />
     </div>
+</div>
 
 
-
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 

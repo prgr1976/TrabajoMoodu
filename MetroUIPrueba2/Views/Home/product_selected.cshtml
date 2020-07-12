@@ -4,7 +4,7 @@
 }
 
 <div class="container bg-white p-6 mx-auto border bd-default win-shadow"
-     style="margin-top:100px; max-width: 600px">
+     style="margin-top:100px; width: 600px">
     <div class="grid">
         <div class="row">
             <div class="cell-6">
@@ -35,8 +35,9 @@
                             <label>Total</label>
                             <label>$178.500</label>
                         </div>
-                        <div class="form-group">
-                            <a href="/Home/Cart/" class=button primary  outline">Agregar al carro</a>                            
+                        <div class="form-group" style="display:flex; flex-direction:column">
+                            <a href="/Home/Cart/" class=button primary outline">Agregar al carro</a><br />
+                            <input onclick="goBack()" class=button primary outline" value="Volver"/>
                         </div>
                     </form>
                 </div>
@@ -76,7 +77,11 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 

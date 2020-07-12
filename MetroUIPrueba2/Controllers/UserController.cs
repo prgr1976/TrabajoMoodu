@@ -14,7 +14,7 @@ namespace MetroUIPrueba2.Controllers
             return View();
         }
 
-        public ActionResult ViewUser()
+        public ActionResult Login()
         {
             return View();
         }
@@ -24,7 +24,12 @@ namespace MetroUIPrueba2.Controllers
             return View();
         }
 
-        public ActionResult Modificate()
+        public ActionResult Edit()
+        {
+            return View();
+        }
+
+        public ActionResult RecoverPassword()
         {
             return View();
         }
