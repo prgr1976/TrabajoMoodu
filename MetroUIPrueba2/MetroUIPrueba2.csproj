@@ -181,7 +181,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Home\Index.xxx" />
     <Content Include="Scripts\metro.min.js.map" />
     <Content Include="Views\Home\PayDocumentUser.cshtml" />
     <Content Include="Views\Producto\Index.cshtml" />
