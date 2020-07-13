@@ -9,11 +9,13 @@
     @Scripts.Render("~/bundles/metro")
 
     <style>
-        .d-menu {
-            margin-left: -30px;
-            margin-top: 50px;
-        }      
+        .button2 {
+            background: transparent;
+            border: none;
+        }
+        
     </style>
+  
 </head>
 
 
@@ -32,24 +34,44 @@
             <span class="subtitle fg-white">Gerencia</span>
         </div>
         <ul class="sidebar-menu">
-            <li><a href="/Insumo/Index"><span class="mif-stack icon"></span>Insumos</a></li>
-            <li><a href="/Producto/Index"><span class="mif-cart icon"></span>Productos</a></li>
-            <li><a href="/Proveedor/Index"><span class="mif-shop icon"></span>Proveedores</a></li>
+            <li>
+                <div style="display:flex; flex-direction:row; align-items:center">
+                    <a href="#"><span class="mif-stack icon"></span>Insumos</a>
+                    <button class="button2 dropdown-toggle dropdownmenu" href="#" style="padding: 0px 0px 0px 0px;"></button>
+                </div>
+                <ul class="d-menu" data-role="dropdown" style="display: none;">
+                    <li><a href="/Insumo/Index"><span class="mif-zoom-in icon"></span>Ver Insumos</a></li>
+                    <li><a href="#">Subitem 2</a></li>
+                    <li><a href="#">Subitem 3</a></li>
+                    <li><a href="#">Subitem 4</a></li>
+                </ul>
+            </li>
+            <li>
+                <div style="display:flex; flex-direction:row; align-items:center">
+                    <a href="#"><span class="mif-cart icon"></span>Productos</a>
+                    <button class="button2 dropdown-toggle dropdownmenu" href="#" style="padding: 0px 0px 0px 0px;"></button>
+                </div>
+                <ul class="d-menu" data-role="dropdown" style="display: none;">
+                    <li><a href="/Producto/Index"><span class="mif-zoom-in icon"></span>Ver Productos</a></li>
+                    <li><a href="#">Subitem 2</a></li>
+                    <li><a href="#">Subitem 3</a></li>
+                    <li><a href="#">Subitem 4</a></li>
+                </ul>
+            </li>
+            <li>
+                <div style="display:flex; flex-direction:row; align-items:center">
+                    <a href="#"><span class="mif-shop icon"></span>Proveedores</a>
+                    <button class="button2 dropdown-toggle dropdownmenu" href="#" style="padding: 0px 0px 0px 0px;"></button>
+                </div>
+                <ul class="d-menu" data-role="dropdown" style="display: none;">
+                    <li><a href="/Proveedor/Index"><span class="mif-zoom-in icon"></span>Ver Proveedores</a></li>
+                    <li><a href="#">Subitem 2</a></li>
+                    <li><a href="#">Subitem 3</a></li>
+                    <li><a href="#">Subitem 4</a></li>
+                </ul>
+            </li>            
             <li class="divider"></li>
             <li><a href="/Home"><span class="mif-exit icon"></span>Salir</a></li>
-            <li>
-                <div style="display:flex; flex-direction:row">
-                    <a href="/Home">hola</a>
-                    <a class="dropdown-toggle" href="#" style="float: left; margin-left:0px"></a>                   
-                    <ul class="d-menu" data-role="dropdown" style="display: none;">
-                        <li><a href="">Subitem 1</a></li>
-                        <li><a href="">Subitem 2</a></li>
-                        <li><a href="">Subitem 3</a></li>
-                        <li><a href="">Subitem 4</a></li>                        
-                    </ul>
-                </div>
-            </li>
-
         </ul>
     </aside>
     <div class="shifted-content h-100 p-ab">

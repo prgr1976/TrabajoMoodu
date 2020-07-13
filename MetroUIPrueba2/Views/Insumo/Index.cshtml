@@ -13,11 +13,18 @@
         padding: 50px;
         position: relative;
     }
+    #btn_nuevo {
+        margin-bottom:20px;
+        margin-left: 10px;
+    }
 </style>
 
 <div class="container" id="principal">
-    <h3>Lista de Insumo</h3>
-    <a href="/Insumo/nuevo" class="button primary small">Nuevo</a>
+    <div style="display:flex; flex-direction:row; align-items:baseline; justify-content:space-between">
+        <h3>Lista de Insumo</h3>
+        <a id="btn_nuevo" href="/Insumo/nuevo" class="button primary rounded"><span class="mif-add icon">Nuevo</span></a>
+    </div>
+    
     <hr />
     <table class="table compact">
         <thead>
