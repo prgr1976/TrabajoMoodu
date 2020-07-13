@@ -7,7 +7,17 @@
     <title>Intranet</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/metro")
+
+    <style>
+        .d-menu {
+            margin-left: -30px;
+            margin-top: 50px;
+        }      
+    </style>
 </head>
+
+
+
 <body>
     <aside class="sidebar pos-absolute z-2"
            data-role="sidebar"
@@ -27,6 +37,19 @@
             <li><a href="/Proveedor/Index"><span class="mif-shop icon"></span>Proveedores</a></li>
             <li class="divider"></li>
             <li><a href="/Home"><span class="mif-exit icon"></span>Salir</a></li>
+            <li>
+                <div style="display:flex; flex-direction:row">
+                    <a href="/Home">hola</a>
+                    <a class="dropdown-toggle" href="#" style="float: left; margin-left:0px"></a>                   
+                    <ul class="d-menu" data-role="dropdown" style="display: none;">
+                        <li><a href="">Subitem 1</a></li>
+                        <li><a href="">Subitem 2</a></li>
+                        <li><a href="">Subitem 3</a></li>
+                        <li><a href="">Subitem 4</a></li>                        
+                    </ul>
+                </div>
+            </li>
+
         </ul>
     </aside>
     <div class="shifted-content h-100 p-ab">
