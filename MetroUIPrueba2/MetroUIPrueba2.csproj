@@ -221,6 +221,8 @@
     <Content Include="Views\Proveedor\Ver.cshtml" />
     <Content Include="Views\Shared\_DisennoLayout.cshtml" />
     <Content Include="Views\Home\Disenno.cshtml" />
+    <Content Include="Views\Home\Vision.cshtml" />
+    <Content Include="Views\Home\Mission.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
