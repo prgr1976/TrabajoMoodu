@@ -120,6 +120,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Gerencia\Controllers\EmpleadoController.cs" />
+    <Compile Include="Areas\Gerencia\Controllers\InsumoController.cs" />
+    <Compile Include="Areas\Gerencia\Controllers\ProveedorController.cs" />
+    <Compile Include="Areas\Gerencia\GerenciaAreaRegistration.cs" />
+    <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InsumoController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
@@ -154,6 +159,31 @@
     <Content Include="mif\metro.woff" />
     <Content Include="mif\metro.ttf" />
     <Content Include="mif\metro.json" />
+    <Content Include="Areas\Gerencia\Views\web.config" />
+    <Content Include="Areas\Gerencia\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Shared\_DisennoLayout.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Shared\_IntranetLayout.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Shared\Error.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Proveedor\Crear.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Proveedor\Editar.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Proveedor\Index.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Proveedor\Nuevo.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Proveedor\Ver.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Actualizar.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Crear.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Editar.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Index.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Inventario.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Nuevo.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Insumo\Ver.cshtml" />
+    <Content Include="Areas\Gerencia\Views\User\Create.cshtml" />
+    <Content Include="Areas\Gerencia\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Gerencia\Views\User\Login.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Empleado\Editar.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Empleado\Index.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Empleado\Nuevo.cshtml" />
+    <Content Include="Areas\Gerencia\Views\Empleado\Ver.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -167,6 +197,9 @@
     <Content Include="Scripts\metro.js" />
     <Content Include="Scripts\metro.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\User\Modificate.cshtml" />
+    <Content Include="Views\User\ViewUser.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -181,6 +214,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Empleado\Index.cshtml" />
+    <Content Include="Views\Empleado\Nuevo.cshtml" />
+    <Content Include="Views\Empleado\Ver.cshtml" />
+    <Content Include="Views\Empleado\Editar.cshtml" />
     <None Include="Views\Home\Index.xxx" />
     <Content Include="Scripts\metro.min.js.map" />
     <Content Include="Views\Home\PayDocumentUser.cshtml" />
@@ -190,9 +227,6 @@
     <Content Include="Views\Producto\Crear.cshtml" />
     <Content Include="Views\Home\product_selected.cshtml" />
     <Content Include="Views\Home\Mesas.cshtml" />
-    <Content Include="Views\User\Create.cshtml" />
-    <Content Include="Views\User\ViewUser.cshtml" />
-    <Content Include="Views\User\Modificate.cshtml" />
     <Content Include="Views\Producto\Inventario.cshtml" />
     <Content Include="Views\Insumo\Crear.cshtml" />
     <Content Include="Views\Insumo\Inventario.cshtml" />
@@ -225,9 +259,13 @@
     <Content Include="Views\Home\Vision.cshtml" />
     <Content Include="Views\Home\Mission.cshtml" />
     <Content Include="Views\Producto\Mesas.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\RecoverPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Gerencia\Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

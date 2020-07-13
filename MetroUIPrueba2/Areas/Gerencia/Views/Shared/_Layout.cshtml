@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/metro")
+
+    <style>
+        .dropbutton {
+            background-color: #F8F8F8;
+            color: #212121;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .dropbutton:hover, .dropbutton:focus {
+            background-color: inherit;
+        }
+        .dropdownmenu {
+            position: relative;            
+            display: inline-block;
+            outline: none;
+        }
+        .dropdownmenu-content {
+            display: none;
+            position: absolute;
+            margin-left: -150px;
+            background-color: #f9f9f9;
+            overflow: auto;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+            padding: 10px 10px 10px 10px;
+        }
+        .show {
+            display: block;
+        }
+        .primary {            
+            margin-right: 5px;
+        }
+        .user_login{
+            color: #212121;
+            background: #F8F8F8;
+            padding: 0px 16px;            
+            display: block;
+            
+        }       
+    </style>
+</head>
+
+<body>
+    <header >
+        <div class="d-flex flex-justify-between app-bar flex-align-end">
+
+            <div class="app-bar-container float-left">
+                <h6>Gerencia</h6>
+                <a href="#" class="app-bar-item dropdown-toggle">Muebles</a>
+                <ul class="d-menu put-left" data-role="dropdown">
+                    <li><a href="/Producto/Comedores">Comedores</a></li>
+                    <li><a href="/Producto/Closets">Closets</a></li>
+                    <li><a href="/Producto/Camas">Camas</a></li>
+                    <li><a href="/Producto/Comodas">Comodas</a></li>
+                </ul>
+                <a href="/Home/Mission" class="app-bar-item">Misión</a>
+                <a href="/Home/Vision" class="app-bar-item">Visión</a>
+                <a href="/Home/Contact" class="app-bar-item">Contacto</a>
+                <a href="/Producto/Disenno" class="app-bar-item">Diseño</a>
+                <a href="/Home/Intranet" class="app-bar-item">Intranet</a>
+            </div>
+            <div id="container-content" class="app-bar-container float-right ">
+                <div class="app-bar-item" >
+                    <div class="dropdownmenu">
+                        <button onclick="btnToggle()" class="dropbutton">
+                            Login
+                        </button>
+                        <div id="Dropdown" class="dropdownmenu-content">
+                            <form>
+                                <div class="form-group">
+                                    <label>Usuario</label><img src="~/pics/intranet_black.png">
+                                    <input class="input-small" type="text" data-role="input"
+                                           data-prepend="<span class='mif-user'></span>" data-size="180px">
+                                    <label>Contraseña</label>
+                                    <input class="input-small" type="password" data-role="input"
+                                           data-prepend="<span class='mif-key'></span>" data-size="180px">
+                                    <input type="checkbox" data-role="checkbox" data-caption="Recordarme">
+                                </div>                             
+                                <div id="content-container" class="form-group">
+                                    <a id="ingreso" href="#" class="button primary outline">Ingreso</a>                                   
+                                    <a href="/User/Edit" class="button primary outline">Registro</a>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // JavaScript code to avoid dropdown
+        // menu close
+        // Clicking dropdown button will toggle display
+        function btnToggle() {
+            document.getElementById("Dropdown").classList.toggle("show");
+        }
+        // Prevents menu from closing when clicked inside
+        document.getElementById("Dropdown").addEventListener('click', function (event) {         
+            event.stopPropagation();
+        });
+        // Closes the menu in the event of outside click
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbutton')) {
+                var dropdowns =
+                    document.getElementsByClassName("dropdownmenu-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }   
+
+        //Se genera el usuario
+        //$('#ingreso').click(function (e) {
+        //    $(this).parent().parent().parent().parent().parent().parent()
+        //        .html('<div class="user_login" style="margin-left: 20px;">Usuario: Carlos Marchant S.</div>' +
+        //            '<button id="btn_exit_user" class="button primary outline" >Salir</button>'
+        //        );
+        //    e.preventDefault();
+        //});
+
+        $("#ingreso").on("click", function (event) {
+            console.log($(this).text());
+            $(this).parent().parent().parent().parent().parent().parent()
+                .html('<div class="user_login" style="margin-left: 20px;">Usuario: Carlos Marchant S.</div>' +
+                    '<button id="btn_exit_user" class="button primary outline" >Salir</button>'
+                );
+            event.preventDefault();
+        });
+
+        // Se genera el control
+        $('#btn_exit_user').click(function (e) {
+            alert("ok");
+           
+            
+        });
+
+        
+
+    </script>
+
+
+    @RenderBody()
+</body>
+
+
+</html>
