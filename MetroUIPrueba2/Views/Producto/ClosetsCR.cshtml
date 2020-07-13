@@ -1,8 +1,12 @@
 ﻿@*<script>
-function sortList(col, dir) {
-    $('#closetscr').data('list').sorting(col,dir,true)
+    function sortList(col, dir) {
+        $('#closetscr').data('list').sorting(col,dir,true)
+    }
+    </script>*@
+@{
+    ViewBag.Title = "Closets";
+    Layout = "~/Views/Shared/_DisennoLayout.cshtml";
 }
-</script>*@
 
 <p class="text-center h3 text-light">Sort by</p>
 <div class="container">
@@ -19,9 +23,16 @@ function sortList(col, dir) {
             <figure class="text-center">
                 <div class="img-container thumbnail">
                     <a href="/Home/product_selected/">
-                        <img src="~/pics/closets/closet_02.jpg" alt="Closet Caburgua Cerezo 2P">
+                        <div class="carousel" data-role="carousel" data-controls="false" data-bullets="false" data-effect="fade" data-period="3000" data-duration="500" data-auto-start="true" data-height="300">
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_02.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_02_1.jpg">
+                            </div>
+                        </div>
                     </a>
-                </div>        
+                </div>
                 <div class="row">
                     <div class="cell-md-4">
                         <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.20mt, Max: 1.80mt">Alto</p>
@@ -33,7 +44,7 @@ function sortList(col, dir) {
                     </div>
                     <div class="cell-md-4">
                         <p style="font-size:14px" data-role="hint" data-hint-text="Min: 0.30mt, Max: 0.55mt">Fondo</p>
-                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.55"/>
+                        <input type="text" class="input-small" data-role="spinner" data-step=".05" data-fixed="2" data-min-value="0.30" data-max-value="0.55" />
                     </div>
                 </div>
                 <input data-role="rating" id="rating-methods" data-stars="5" data-star-color="yellow" data-stared-color="yellow">
@@ -53,9 +64,16 @@ function sortList(col, dir) {
             <figure class="text-center">
                 <div class="img-container thumbnail">
                     <a href="/Home/product_selected/">
-                        <img src="~/pics/closets/closet_05.jpg" alt="Closet Favatex Delf 3P Corredera 2C">
+                        <div class="carousel" data-role="carousel" data-controls="false" data-bullets="false" data-effect="fade" data-period="3000" data-duration="500" data-auto-start="true" data-height="300">
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_05.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_05_1.jpg">
+                            </div>
+                        </div>
                     </a>
-                </div>        
+                </div>
                 <div class="row">
                     <div class="cell-md-4">
                         <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.30mt, Max: 1.80mt">Alto</p>
@@ -87,9 +105,16 @@ function sortList(col, dir) {
             <figure class="text-center">
                 <div class="img-container thumbnail">
                     <a href="/Home/product_selected/">
-                        <img src="~/pics/closets/closet_01.jpg" alt="Closet Yardas Puerta con Espejo">
+                        <div class="carousel" data-role="carousel" data-controls="false" data-bullets="false" data-effect="fade" data-period="3000" data-duration="500" data-auto-start="true" data-height="300">
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_01.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_01_1.jpg">
+                            </div>
+                        </div>
                     </a>
-                </div>        
+                </div>
                 <div class="row">
                     <div class="cell-md-4">
                         <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.60mt, Max: 1.80mt">Alto</p>
@@ -121,9 +146,16 @@ function sortList(col, dir) {
             <figure class="text-center">
                 <div class="img-container thumbnail">
                     <a href="/Home/product_selected/">
-                        <img src="~/pics/closets/closet_04.jpg" alt="Closet Caburgua Walnut 2 Puertas y 4 cajones">
+                        <div class="carousel" data-role="carousel" data-controls="false" data-bullets="false" data-effect="fade" data-period="3000" data-duration="500" data-auto-start="true" data-height="300">
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_04.jpg">
+                            </div>
+                            <div class="slide">
+                                <img src="~/pics/closets/closet_04_1.jpg">
+                            </div>
+                        </div>
                     </a>
-                </div>        
+                </div>
                 <div class="row">
                     <div class="cell-md-4">
                         <p style="font-size:14px" data-role="hint" data-hint-text="Min: 1.20mt, Max: 1.80mt">Alto</p>

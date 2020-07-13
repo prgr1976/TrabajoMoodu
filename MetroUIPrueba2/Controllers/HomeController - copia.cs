@@ -59,7 +59,17 @@ namespace MetroUIPrueba2.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
         public ActionResult Disenno()
+=======
+
+        public ActionResult Vision()
+        {
+            return View();
+        }
+
+        public ActionResult Mission()
+>>>>>>> f0bd5fec584beb38a67184a4999b3c7f8ff1f379
         {
             return View();
         }
