@@ -24,6 +24,11 @@
         .user_session h6 {
             color: blue;
         }
+    #btn_nuevo {
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+</style>
 
     .div-img {
         display: flex;
@@ -42,6 +47,11 @@
     <h3>Lista de Proveedores</h3>
     <a href="/Proveedor/nuevo" class="button primary small"><span class="mif-note-add"></span>Nuevo</a>
 
+<div class="container" id="principal">   
+    <div style="display:flex; flex-direction:row; align-items:baseline; justify-content:space-between">
+        <h3>Lista de Proveedores</h3>
+        <a id="btn_nuevo" href="/Proveedor/nuevo" class="button primary rounded"><span class="mif-add icon">Nuevo</span></a>
+    </div>
     <hr />
     <table class="table compact row-hover">
         <thead>

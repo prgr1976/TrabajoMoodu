@@ -18,6 +18,7 @@ namespace MetroUIPrueba2
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "MetroUIPrueba2.Controllers"}
+               
             );
         }
     }
