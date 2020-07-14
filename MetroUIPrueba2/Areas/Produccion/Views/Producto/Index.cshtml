@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Intranet";
+    Layout = "~/Areas/Produccion/Views/Shared/_IntranetLayoutInsumos.cshtml";
+}
+
+<style>
+    #principal {
+        width: 900px;
+        height: auto;
+        top: 50%;
+        margin-top: 60px;
+        border: 1px solid green;
+        padding: 50px;
+        position: relative;
+    }
+    #btn_nuevo {
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+</style>
+
+
+
+
+<div class="container" id="principal">
+    <div style="display:flex; flex-direction:row; align-items:baseline; justify-content:space-between">
+        <h3>Lista de Productos</h3>
+        <a id="btn_nuevo" href="/Producto/nuevo" class="button primary rounded"><span class="mif-add icon">Nuevo</span></a>
+    </div>    
+    <hr />
+    <table class="table compact">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Usuario</th>
+                <th>Codigo</th>
+                <th>Ingreso</th>
+                <th>Valoracion</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>User-01</td>
+                <td>PD-19</td>
+                <td>20-02-2018</td>
+                <td>$ 650.000</td>
+                <td>La descripcion...</td>
+                <td>
+                    <a href="@Url.Action("Ver","Producto", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Producto", new {id=1 })">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>User-05</td>
+                <td>PD-360</td>
+                <td>30-03-2020</td>
+                <td>$ 450.000</td>
+                <td>La descripcion2...</td>
+                <td>
+                    <a href="@Url.Action("Ver","Producto", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Producto", new {id=1 })">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>User-01</td>
+                <td>PD-05</td>
+                <td>29-02.2018</td>
+                <td>$ 200.000</td>
+                <td>La descripcion3...</td>
+                <td>
+                    <a href="@Url.Action("Ver","Producto", new { id = 1 })">Ver/</a>
+                    <a href="@Url.Action("Editar", "Producto", new {id=1 })">Editar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
