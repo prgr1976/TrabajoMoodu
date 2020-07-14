@@ -188,7 +188,6 @@
     <Content Include="Views\Home\user_client_choose.cshtml" />
     <Content Include="Views\Producto\Crear.cshtml" />
     <Content Include="Views\Home\product_selected.cshtml" />
-    <Content Include="Views\Home\Mesas.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\ViewUser.cshtml" />
     <Content Include="Views\User\Modificate.cshtml" />
