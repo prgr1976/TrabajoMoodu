@@ -20,12 +20,10 @@
 </style>
 
 
-
-
 <div class="container" id="principal">
     <div style="display:flex; flex-direction:row; align-items:baseline; justify-content:space-between">
         <h3>Lista de Productos</h3>
-        <a id="btn_nuevo" href="/Producto/nuevo" class="button primary rounded"><span class="mif-add icon">Nuevo</span></a>
+        <a id="btn_nuevo" href="@Url.Action("Nuevo","Producto")" class="button primary rounded"><span class="mif-add icon">Nuevo</span></a>
     </div>    
     <hr />
     <table class="table compact">

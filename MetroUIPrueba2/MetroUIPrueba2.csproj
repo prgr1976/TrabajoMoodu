@@ -181,8 +181,6 @@
     <Content Include="Areas\Produccion\Views\Insumo\Nuevo.cshtml" />
     <Content Include="Areas\Produccion\Views\Insumo\Ver.cshtml" />
     <Content Include="Areas\Produccion\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Produccion\Views\Shared\_IntranetLayout.cshtml" />
-    <Content Include="Areas\Produccion\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Produccion\Views\Shared\Error.cshtml" />
     <Content Include="Areas\Produccion\Views\Shared\_IntranetLayoutInsumos.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
