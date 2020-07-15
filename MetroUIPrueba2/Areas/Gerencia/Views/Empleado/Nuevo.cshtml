@@ -1,4 +1,9 @@
-﻿<style>
+﻿@{
+    ViewBag.Title = "Intranet";
+    Layout = "~/Areas/Gerencia/Views/Shared/_IntranetLayoutGerencia.cshtml";
+}
+
+<style>
     #principal {
         width: 800px;
         height: 600px;
@@ -23,10 +28,10 @@
             <tr><td style="padding-right:15px;">Nombres:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
             <tr><td style="padding-right:15px;">Apellidos:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
             <tr><td style="padding-right:15px;">Dirección:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
-        <tr><td style="padding-right:15px;">Teléfono:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
+            <tr><td style="padding-right:15px;">Teléfono:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
             <tr><td style="padding-right:15px;">Email:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
             <tr><td style="padding-right:15px;">Cargo:</td><td style="padding-top:10px;"><input style="width:400px;" type="text" data-role="input" data-append="#" class="input-lg"></td></tr>
-         
+
         </table><br />
         <div class="form-group">
             <button class="button success">Registrar</button>

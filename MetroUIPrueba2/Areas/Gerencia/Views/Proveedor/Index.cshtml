@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "Intranet";
-    Layout = "~/Views/Shared/_IntranetLayout.cshtml";
+    Layout = "~/Areas/Gerencia/Views/Shared/_IntranetLayoutGerencia.cshtml";
 }
 
 <style>
@@ -13,6 +13,12 @@
         padding: 50px;
         position: relative;
     }
+
+    #btn_nuevo {
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
     .user_session {
         margin-top: 3px;
         margin-left: 5px;
@@ -24,6 +30,8 @@
         .user_session h6 {
             color: blue;
         }
+
+     
 
     .div-img {
         display: flex;
@@ -39,15 +47,16 @@
 
 <div class="container" id="principal">
     <div class="div-img"><img style="width:50px; height:50px;" src="~/pics/intranet/listar.jpg"></div>
-    <h3>Lista de Proveedores</h3>
-    <a href="/Proveedor/nuevo" class="button primary small"><span class="mif-note-add"></span>Nuevo</a>
-
+    <div style="display:flex; flex-direction:row; align-items:baseline; justify-content:space-between">
+        <h3>Lista de Proveedores</h3>
+        <a id="btn_nuevo" href="@Url.Action("Nuevo","Proveedor")" class="button primary rounded"><span class="mif-add icon">Nuevo</span></a>
+    </div>   
     <hr />
     <table class="table compact row-hover">
         <thead>
             <tr>
                 <th>Razon</th>
-               
+
                 <th>Dirección</th>
                 <th>Email</th>
                 <th>Categoria</th>
@@ -57,7 +66,7 @@
         <tbody>
             <tr>
                 <td>Empresa de Pinturas S.A</td>
-               
+
                 <td>Los Avellanos # 675</td>
                 <td>ep@email.com</td>
                 <td>Pinturas</td>
@@ -68,7 +77,7 @@
             </tr>
             <tr>
                 <td>Prodema S.A</td>
-                
+
                 <td>Padre Lorenzo Eiting #5893</td>
                 <td>prodema@email.com</td>
                 <td>Materia Prima</td>
@@ -79,7 +88,7 @@
             </tr>
             <tr>
                 <td>Gretsch-Unitas</td>
-               
+
                 <td> Camino Los Carros #1955</td>
                 <td>gu@email.com</td>
                 <td>Cerraduras</td>
